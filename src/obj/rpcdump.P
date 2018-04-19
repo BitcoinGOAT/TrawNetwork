@@ -1,0 +1,28 @@
+obj/rpcdump.o: rpcdump.cpp init.h wallet.h walletdb.h db.h serialize.h \
+ allocators.h version.h clientversion.h sync.h threadsafety.h key.h \
+ uint256.h hash.h obj/x13hash/sph_blake.h obj/x13hash/sph_types.h \
+ obj/x13hash/sph_bmw.h obj/x13hash/sph_groestl.h obj/x13hash/sph_jh.h \
+ obj/x13hash/sph_keccak.h obj/x13hash/sph_skein.h obj/x13hash/sph_luffa.h \
+ obj/x13hash/sph_cubehash.h obj/x13hash/sph_shavite.h \
+ obj/x13hash/sph_simd.h obj/x13hash/sph_echo.h obj/x13hash/sph_hamsi.h \
+ obj/x13hash/sph_fugue.h crypter.h keystore.h main.h core.h util.h \
+ tinyformat.h script.h bignum.h txmempool.h net.h mruset.h netbase.h \
+ compat.h protocol.h chainparams.h addrman.h timedata.h scrypt.h \
+ ui_interface.h rpcserver.h rpcprotocol.h \
+ json/json_spirit_reader_template.h json/json_spirit_value.h \
+ json/json_spirit_error_position.h json/json_spirit_utils.h \
+ json/json_spirit_writer_template.h base58.h
+rpcdump.cpp init.h wallet.h walletdb.h db.h serialize.h :
+ allocators.h version.h clientversion.h sync.h threadsafety.h key.h :
+ uint256.h hash.h obj/x13hash/sph_blake.h obj/x13hash/sph_types.h :
+ obj/x13hash/sph_bmw.h obj/x13hash/sph_groestl.h obj/x13hash/sph_jh.h :
+ obj/x13hash/sph_keccak.h obj/x13hash/sph_skein.h obj/x13hash/sph_luffa.h :
+ obj/x13hash/sph_cubehash.h obj/x13hash/sph_shavite.h :
+ obj/x13hash/sph_simd.h obj/x13hash/sph_echo.h obj/x13hash/sph_hamsi.h :
+ obj/x13hash/sph_fugue.h crypter.h keystore.h main.h core.h util.h :
+ tinyformat.h script.h bignum.h txmempool.h net.h mruset.h netbase.h :
+ compat.h protocol.h chainparams.h addrman.h timedata.h scrypt.h :
+ ui_interface.h rpcserver.h rpcprotocol.h :
+ json/json_spirit_reader_template.h json/json_spirit_value.h :
+ json/json_spirit_error_position.h json/json_spirit_utils.h :
+ json/json_spirit_writer_template.h base58.h :

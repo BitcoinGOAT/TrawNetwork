@@ -1,0 +1,20 @@
+obj/net.o: net.cpp chainparams.h bignum.h serialize.h allocators.h \
+ version.h clientversion.h uint256.h util.h tinyformat.h db.h sync.h \
+ threadsafety.h net.h mruset.h netbase.h compat.h protocol.h addrman.h \
+ timedata.h hash.h obj/x13hash/sph_blake.h obj/x13hash/sph_types.h \
+ obj/x13hash/sph_bmw.h obj/x13hash/sph_groestl.h obj/x13hash/sph_jh.h \
+ obj/x13hash/sph_keccak.h obj/x13hash/sph_skein.h obj/x13hash/sph_luffa.h \
+ obj/x13hash/sph_cubehash.h obj/x13hash/sph_shavite.h \
+ obj/x13hash/sph_simd.h obj/x13hash/sph_echo.h obj/x13hash/sph_hamsi.h \
+ obj/x13hash/sph_fugue.h main.h core.h script.h keystore.h key.h \
+ txmempool.h scrypt.h ui_interface.h
+net.cpp chainparams.h bignum.h serialize.h allocators.h :
+ version.h clientversion.h uint256.h util.h tinyformat.h db.h sync.h :
+ threadsafety.h net.h mruset.h netbase.h compat.h protocol.h addrman.h :
+ timedata.h hash.h obj/x13hash/sph_blake.h obj/x13hash/sph_types.h :
+ obj/x13hash/sph_bmw.h obj/x13hash/sph_groestl.h obj/x13hash/sph_jh.h :
+ obj/x13hash/sph_keccak.h obj/x13hash/sph_skein.h obj/x13hash/sph_luffa.h :
+ obj/x13hash/sph_cubehash.h obj/x13hash/sph_shavite.h :
+ obj/x13hash/sph_simd.h obj/x13hash/sph_echo.h obj/x13hash/sph_hamsi.h :
+ obj/x13hash/sph_fugue.h main.h core.h script.h keystore.h key.h :
+ txmempool.h scrypt.h ui_interface.h :

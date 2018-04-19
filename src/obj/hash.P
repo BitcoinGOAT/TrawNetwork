@@ -1,0 +1,14 @@
+obj/hash.o: hash.cpp hash.h uint256.h serialize.h allocators.h version.h \
+ clientversion.h obj/x13hash/sph_blake.h obj/x13hash/sph_types.h \
+ obj/x13hash/sph_bmw.h obj/x13hash/sph_groestl.h obj/x13hash/sph_jh.h \
+ obj/x13hash/sph_keccak.h obj/x13hash/sph_skein.h obj/x13hash/sph_luffa.h \
+ obj/x13hash/sph_cubehash.h obj/x13hash/sph_shavite.h \
+ obj/x13hash/sph_simd.h obj/x13hash/sph_echo.h obj/x13hash/sph_hamsi.h \
+ obj/x13hash/sph_fugue.h
+hash.cpp hash.h uint256.h serialize.h allocators.h version.h :
+ clientversion.h obj/x13hash/sph_blake.h obj/x13hash/sph_types.h :
+ obj/x13hash/sph_bmw.h obj/x13hash/sph_groestl.h obj/x13hash/sph_jh.h :
+ obj/x13hash/sph_keccak.h obj/x13hash/sph_skein.h obj/x13hash/sph_luffa.h :
+ obj/x13hash/sph_cubehash.h obj/x13hash/sph_shavite.h :
+ obj/x13hash/sph_simd.h obj/x13hash/sph_echo.h obj/x13hash/sph_hamsi.h :
+ obj/x13hash/sph_fugue.h :
