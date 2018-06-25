@@ -9,12 +9,12 @@ obj/main.o: main.cpp alert.h serialize.h allocators.h version.h \
  obj/x13hash/sph_hamsi.h obj/x13hash/sph_fugue.h db.h init.h wallet.h \
  walletdb.h key.h crypter.h keystore.h main.h core.h script.h txmempool.h \
  scrypt.h ui_interface.h kernel.h txdb.h txdb-leveldb.h \
- /usr/src/Traw/src/leveldb/include/leveldb/db.h \
- /usr/src/Traw/src/leveldb/include/leveldb/iterator.h \
- /usr/src/Traw/src/leveldb/include/leveldb/slice.h \
- /usr/src/Traw/src/leveldb/include/leveldb/status.h \
- /usr/src/Traw/src/leveldb/include/leveldb/options.h \
- /usr/src/Traw/src/leveldb/include/leveldb/write_batch.h
+ /root/TrawNetwork/src/leveldb/include/leveldb/db.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/iterator.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/slice.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/status.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/options.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/write_batch.h
 main.cpp alert.h serialize.h allocators.h version.h :
  clientversion.h chainparams.h bignum.h uint256.h util.h tinyformat.h :
  checkpoints.h net.h mruset.h netbase.h compat.h protocol.h addrman.h :
@@ -26,9 +26,9 @@ main.cpp alert.h serialize.h allocators.h version.h :
  obj/x13hash/sph_hamsi.h obj/x13hash/sph_fugue.h db.h init.h wallet.h :
  walletdb.h key.h crypter.h keystore.h main.h core.h script.h txmempool.h :
  scrypt.h ui_interface.h kernel.h txdb.h txdb-leveldb.h :
- /usr/src/Traw/src/leveldb/include/leveldb/db.h :
- /usr/src/Traw/src/leveldb/include/leveldb/iterator.h :
- /usr/src/Traw/src/leveldb/include/leveldb/slice.h :
- /usr/src/Traw/src/leveldb/include/leveldb/status.h :
- /usr/src/Traw/src/leveldb/include/leveldb/options.h :
- /usr/src/Traw/src/leveldb/include/leveldb/write_batch.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/db.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/iterator.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/slice.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/status.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/options.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/write_batch.h :

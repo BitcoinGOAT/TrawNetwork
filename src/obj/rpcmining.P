@@ -11,13 +11,13 @@ obj/rpcmining.o: rpcmining.cpp rpcserver.h uint256.h rpcprotocol.h \
  obj/x13hash/sph_hamsi.h obj/x13hash/sph_fugue.h sync.h threadsafety.h \
  txmempool.h net.h mruset.h netbase.h protocol.h addrman.h timedata.h \
  scrypt.h db.h txdb.h txdb-leveldb.h \
- /usr/src/Traw/src/leveldb/include/leveldb/db.h \
- /usr/src/Traw/src/leveldb/include/leveldb/iterator.h \
- /usr/src/Traw/src/leveldb/include/leveldb/slice.h \
- /usr/src/Traw/src/leveldb/include/leveldb/status.h \
- /usr/src/Traw/src/leveldb/include/leveldb/options.h \
- /usr/src/Traw/src/leveldb/include/leveldb/write_batch.h init.h wallet.h \
- walletdb.h crypter.h ui_interface.h miner.h kernel.h
+ /root/TrawNetwork/src/leveldb/include/leveldb/db.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/iterator.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/slice.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/status.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/options.h \
+ /root/TrawNetwork/src/leveldb/include/leveldb/write_batch.h init.h \
+ wallet.h walletdb.h crypter.h ui_interface.h miner.h kernel.h
 rpcmining.cpp rpcserver.h uint256.h rpcprotocol.h :
  compat.h json/json_spirit_reader_template.h json/json_spirit_value.h :
  json/json_spirit_error_position.h json/json_spirit_utils.h :
@@ -31,10 +31,10 @@ rpcmining.cpp rpcserver.h uint256.h rpcprotocol.h :
  obj/x13hash/sph_hamsi.h obj/x13hash/sph_fugue.h sync.h threadsafety.h :
  txmempool.h net.h mruset.h netbase.h protocol.h addrman.h timedata.h :
  scrypt.h db.h txdb.h txdb-leveldb.h :
- /usr/src/Traw/src/leveldb/include/leveldb/db.h :
- /usr/src/Traw/src/leveldb/include/leveldb/iterator.h :
- /usr/src/Traw/src/leveldb/include/leveldb/slice.h :
- /usr/src/Traw/src/leveldb/include/leveldb/status.h :
- /usr/src/Traw/src/leveldb/include/leveldb/options.h :
- /usr/src/Traw/src/leveldb/include/leveldb/write_batch.h init.h wallet.h :
- walletdb.h crypter.h ui_interface.h miner.h kernel.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/db.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/iterator.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/slice.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/status.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/options.h :
+ /root/TrawNetwork/src/leveldb/include/leveldb/write_batch.h init.h :
+ wallet.h walletdb.h crypter.h ui_interface.h miner.h kernel.h :

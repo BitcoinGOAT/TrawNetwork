@@ -1,4 +1,4 @@
 obj/version.o: version.cpp version.h clientversion.h \
- /usr/src/Traw/src/obj/build.h
+ /root/TrawNetwork/src/obj/build.h
 version.cpp version.h clientversion.h :
- /usr/src/Traw/src/obj/build.h :
+ /root/TrawNetwork/src/obj/build.h :
