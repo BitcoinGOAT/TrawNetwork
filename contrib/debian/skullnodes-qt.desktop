@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Traw
+Comment=Traw P2P Cryptocurrency
+Comment[fr]=Traw, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Traw, eşten eşe kriptografik sanal para birimi
+Exec=send-qt %u
+Terminal=false
+Type=Application
+Icon=traw128
+MimeType=x-scheme-handler/traw;
+Categories=Office;Finance;

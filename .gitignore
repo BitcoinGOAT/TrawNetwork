@@ -24,3 +24,46 @@ qrc_*.cpp
 build
 
 !src/leveldb/Makefile
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Misc
+out
+autom4te.cache
+depends/built
+depends/work
+depends/i686-w64-mingw32
+depends/sources
+configure
+config.log
