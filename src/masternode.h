@@ -1,6 +1,6 @@
 
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The Traw developers
+// Copyright (c) 2015-2017 The SEND developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef MASTERNODE_H
@@ -21,6 +21,7 @@
 #define MASTERNODE_EXPIRATION_SECONDS (120 * 60)
 #define MASTERNODE_REMOVAL_SECONDS (130 * 60)
 #define MASTERNODE_CHECK_SECONDS 5
+#define MASTERNODE_NETCHECK_SECONDS 3600
 
 using namespace std;
 
@@ -100,7 +101,7 @@ public:
 };
 
 //
-// The Masternode Class. For managing the Obfuscation process. It contains the input of the 10000 TRAW, signature to prove
+// The Masternode Class. For managing the Obfuscation process. It contains the input of the 10000 SEND, signature to prove
 // it's the one who own that ip address and code for calculating the payment election.
 //
 class CMasternode
@@ -109,6 +110,8 @@ private:
     // critical section to protect the inner data structures
     mutable CCriticalSection cs;
     int64_t lastTimeChecked;
+    int64_t lastTimeNetChecked;
+
 
 public:
     enum state {
@@ -120,7 +123,8 @@ public:
         MASTERNODE_WATCHDOG_EXPIRED,
         MASTERNODE_POSE_BAN,
         MASTERNODE_VIN_SPENT,
-        MASTERNODE_POS_ERROR
+        MASTERNODE_POS_ERROR,
+	MASTERNODE_UNREACHABLE
     };
 
     CTxIn vin;
@@ -149,7 +153,7 @@ public:
     CMasternode();
     CMasternode(const CMasternode& other);
     CMasternode(const CMasternodeBroadcast& mnb);
-
+    void netCheckMasternode();
 
     void swap(CMasternode& first, CMasternode& second) // nothrow
     {
@@ -276,6 +280,7 @@ public:
         if (activeState == CMasternode::MASTERNODE_VIN_SPENT) strStatus = "VIN_SPENT";
         if (activeState == CMasternode::MASTERNODE_REMOVE) strStatus = "REMOVE";
         if (activeState == CMasternode::MASTERNODE_POS_ERROR) strStatus = "POS_ERROR";
+	if (activeState == CMasternode::MASTERNODE_UNREACHABLE) strStatus = "UNREACHABLE";
 
         return strStatus;
     }

@@ -312,6 +312,10 @@ std::string CMasternode::GetStatus()
         return "WATCHDOG_EXPIRED";
     case CMasternode::MASTERNODE_POSE_BAN:
         return "POSE_BAN";
+    case CMasternode::MASTERNODE_VIN_SPENT:
+        return "VIN_SPENT";
+    case CMasternode::MASTERNODE_UNREACHABLE: 
+		return "UNREACHABLE";
     default:
         return "UNKNOWN";
     }
