@@ -13,7 +13,6 @@ src/build.h
 .traw
 #compilation and Qt preprocessor part
 *.qm
-Makefile
 traw-qt
 #resources cpp
 qrc_*.cpp
@@ -22,8 +21,6 @@ qrc_*.cpp
 #mac specific
 .DS_Store
 build
-
-!src/leveldb/Makefile
 
 # Prerequisites
 *.d
