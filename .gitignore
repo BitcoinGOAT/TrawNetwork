@@ -64,3 +64,13 @@ depends/i686-w64-mingw32
 depends/sources
 configure
 config.log
+./Makefile
+./config.status
+./contrib/devtools/split-debug.sh
+./libtool
+./qa/pull-tester/run-bitcoind-for-test.sh
+./qa/pull-tester/tests-config.sh
+./share/setup.nsi
+src/Makefile
+src/config/traw-config.h
+src/test/buildenv.py
