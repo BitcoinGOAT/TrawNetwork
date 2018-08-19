@@ -1,4 +1,4 @@
-Name "Traw Core (32-bit)"
+Name "Traw Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://www.traw.io
 
 # MUI Symbol Definitions
-!define MUI_ICON "/usr/src/Traw/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/usr/src/Traw/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/usr/src/Traw1001/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/usr/src/Traw1001/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/usr/src/Traw/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/usr/src/Traw1001/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,13 +22,13 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Traw Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\traw-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/usr/src/Traw/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/usr/src/Traw1001/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "32" == "64"
+!if "" == "64"
 !include x64.nsh
 !endif
 
@@ -48,8 +48,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /usr/src/Traw/traw-${VERSION}-win32-setup.exe
-!if "32" == "64"
+OutFile /usr/src/Traw1001/traw-${VERSION}-win-setup.exe
+!if "" == "64"
 InstallDir $PROGRAMFILES64\Traw
 !else
 InstallDir $PROGRAMFILES\Traw
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /usr/src/Traw/release/traw-qt.exe
-    File /oname=COPYING.txt /usr/src/Traw/COPYING
-    File /oname=readme.txt /usr/src/Traw/doc/README_windows.txt
+    File /usr/src/Traw1001/release/traw-qt.exe
+    File /oname=COPYING.txt /usr/src/Traw1001/COPYING
+    File /oname=readme.txt /usr/src/Traw1001/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /usr/src/Traw/release/trawd.exe
-    File /usr/src/Traw/release/traw-cli.exe
+    File /usr/src/Traw1001/release/trawd.exe
+    File /usr/src/Traw1001/release/traw-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /usr/src/Traw/doc\*.*
+    File /r /usr/src/Traw1001/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
@@ -160,7 +160,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "32" == "64"
+!if "" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64
